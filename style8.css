@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.newsletter img {
+  width: 100%;
+  display: block;
+  margin: 1rem auto;
+}
+.newsletter {
+  background: fff;
+  font-family: "Poppins", sans-serif;
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 0 15px 0 rgba(201, 201, 201, 0.3);
+  -moz-box-shadow: 0 0 15px 0 rgba(201, 201, 201, 0.3);
+  box-shadow: 0 0 15px 0;
+}
+.newsletter-wrapper {
+  margin: 2rem 1.5rem;
+  text-align: center;
+}
+.close-btn {
+  display: block;
+  margin-left: auto;
+  cursor: pointer;
+  background: #64a4ec;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+}
+.close-btn:hover {
+  background: #64a4ec;
+}
+.newsletter-wrapper h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  color: #64a4ec;
+}
+.newsletter-wrapper p {
+  opacity: 0.6;
+  padding: 1rem 0;
+}
+.newsletter-wrapper input[type="email"] {
+  width: 100%;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.55rem 2rem;
+  margin: 0.5rem 0;
+  border-radius: 1.5rem;
+  border: 2px solid #64a4ec;
+  outline: 0;
+  color: #64a4ec;
+}
+.newsletter-wrapper input[type="email"] ::placeholder {
+  color: #64a4ec;
+  text-align: center;
+}
+.sub-btn {
+  background-color: #64a4ec;
+  background-image: linear-gradient(90deg, #64a4ec 0% #092a50 100%);
+  border: none;
+  color: #fff;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 0.7rem 2.5rem;
+  border-radius: 2rem;
+  margin-top: 1rem;
+  outline: 0;
+  cursor: pointer;
+}
+.sub-btn:hover {
+  background-image: linear-gradient(90deg, #64a4ec 0%, #092a50 100%);
+}
+
+@media screen and (min-width: 480px) {
+  .newsletter {
+    width: 460px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .newsletter-wrapper input[type="email"] {
+    width: 300px;
+  }
+}
